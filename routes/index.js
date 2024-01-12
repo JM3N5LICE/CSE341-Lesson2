@@ -1,8 +1,8 @@
 const routes = require('express').Router();
 
-const myController = require('../controllers');
+const controller = require('../controllers');
 
-routes.get('/', myController.awesomeFunction);
-routes.get('/awesome', myController.aBryantsBBQSauce);
+routes.get('/', controller.awesomeFunction);
+routes.get('/awesome', controller.aBryantsBBQSauce);
 
 module.exports = routes;
