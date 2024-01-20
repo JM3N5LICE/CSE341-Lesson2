@@ -1,0 +1,23 @@
+{
+    "contact": {
+        "firstName": "Laurie",
+        "lastname": "Ball",
+        "email": "mrs.laurie.ball@gmail.com",
+        "favoriteColor": "Yellow",
+        "birthday": "September 21, 1974"
+    },
+    "contact1": {
+        "firstName": "Christian",
+        "lastname": "Viazzo",
+        "email": "chvia@gmail.com",
+        "favoriteColor": "Green",
+        "birthday": "June 8, 1998"
+    },
+    "contact2": {
+        "firstName": "Zach",
+        "lastname": "Mencl",
+        "email": "zacmen14@gmail.com",
+        "favoriteColor": "Blue",
+        "birthday": "September 2, 1995"
+    }
+}
