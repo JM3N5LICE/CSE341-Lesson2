@@ -16,8 +16,8 @@ GET http://localhost:8080/contacts/65ab1bb3ba6288f9371ae098
 ### 
 GET https://cse341-lesson2-544n.onrender.com/
 ### 
-GET https://cse341-lesson2-544n.onrender.com/contacts/622023f642f9ab4cd6e060b2 
+GET https://cse341-lesson2-544n.onrender.com/contacts
 ### 
-GET https://cse341-instructor.herokuapp.com/contacts/622023f642f9ab4cd6e060b3 
+GET https://cse341-lesson2-544n.onrender.com/contacts/622023f642f9ab4cd6e060b3 
 ### 
 GET https://cse341-instructor.herokuapp.com/contacts/622023f642f9ab4cd6e060b4
