@@ -7,6 +7,10 @@
 // app.listen(port, () => {
 //     console.log(`Server is running on port ${port}`);
 // });
+if (process.env.NODE_ENV !== 'production') {
+  require('dotenv').config();
+}
+
 
 const express = require('express');
 const bodyParser = require('body-parser');
@@ -14,6 +18,11 @@ const mongodb = require('./db/connect');
 
 const port = process.env.PORT || 8080;
 const app = express();
+const config = require('./config'); // Adjust the path based on your project structure
+
+// Access MongoDB URI
+const mongoURI = process.env.MONGODB_URI;
+
 
 app.get('/', (req, res) => {
     res.send('Welcome to the root of the application!');
