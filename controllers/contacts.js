@@ -15,18 +15,19 @@ const getAll = async (req, res, next) => {
 
 const getSingle = async (req, res, next) => {
   try {
-    console.log('Request to fetch single contact:', req.params.id);
-
-    await mongodb.connectDb();
     const userId = new ObjectId(req.params.id);
-    console.log('Fetching contact with ID:', userId);
-
-    const result = await mongodb.getDb().collection('contacts').find({ _id: userId }).toArray();
-    console.log('Result from MongoDB:', result);
+    const result = await mongodb
+      .getDb()
+      .db()
+      .collection('contacts')
+      .find({ _id: userId })
+      .toArray();
 
     if (result.length === 0) {
+      // Contact not found
       res.status(404).json({ error: 'Contact not found' });
     } else {
+      // Contact found, respond with the first item in the array
       res.setHeader('Content-Type', 'application/json');
       res.status(200).json(result[0]);
     }
